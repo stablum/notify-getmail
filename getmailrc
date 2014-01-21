@@ -1,0 +1,27 @@
+# ~/.getmail/getmailrc
+# Configuration file to retrieve messages over secure IMAP
+
+[retriever]
+type=SimpleIMAPSSLRetriever
+server=imap.gmail.com
+username=YOUREMAILADDRESS@gmail.com
+password=YOURPASSWORD
+
+[destination]
+type=Mboxrd
+path=~/getmail.mbox
+
+[options]
+verbose=0
+read_all=false
+delete=false
+delete_after=0
+delete_bigger_than=0
+max_bytes_per_session=0
+max_message_size=0
+max_messages_per_session=0
+delivered_to=false
+received=false
+message_log=~/getmail.log
+message_log_syslog=false
+message_log_verbose=true
